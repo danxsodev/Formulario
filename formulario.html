@@ -14,49 +14,91 @@
 
 <body>
     <div>
-        <h1>Formulario de cadastro</h1>
-        <h3>Complete suas informações</h3>
+        <h1 id="titulo">Formulario de cadastro</h1>
+        <h3 id="subtitulo">Complete suas informações</h3>
         <br>
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label>Nome:</label>
-                <input type="text" name="Nome" id="Nome">
+        <fieldset id="grupo">
+            <div class="campo">
+                <label for="Nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
-                <label>Sobrenome:</label>
-                <input type="text" name="Sobrenome" id="Sobrenome">
+            <div class="campo">
+                <label for="Sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
 
-            <div>
-                <label>Data de Nascimento:</label>
-                <input type="date" name="Data" id="Data">
+            <div class="campo">
+                <label for="Data de Nascimento">Data de Nascimento:</label>
+                <input type="date" name="data" id="data" required>
             </div>
 
-            <div>
-                <label>Gênero:</label>
+            <div class="campo">
+                <label for="Gênero">Gênero:</label>
                 <br>
-                <input type="radio" name="Gênero" value="Feminino"> F
+                <input type="radio" name="gênero" id="gênero" value="Feminino"> Feminino
                 <br>
-                <input type="radio" name="Gênero" value="Masculino"> M
+                <input type="radio" name="gênero" id="gênero" value="Masculino"> Masculino
                 <br>
-                <input type="radio" name="Gênero" value="Nao Binario"> B
+                <input type="radio" name="gênero" id="gênero" value="Nao Binario"> Não Binário
             </div>
 
-            <!--lista de uf-->
-
-            <div>
-                <label>Email:</label>
-                <input type="email" name="Email" id="Email">
+            <div class="campo">
+                <label for="UF">Selecione a sua UF
+                    <select id="UF">
+                        <option selected disabled value="">Selecione...<option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option> 
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </label>
             </div>
 
-            <div>
-                <label>Senha:</label>
-                <input type="password" name="Senha" id="Senha">
+            <div class="campo">
+                <label for="Email">Email:</label>
+                <input type="email" name="email" id="email" required>
             </div>
+
+            <div class="campo">
+                <label for="Senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label>Registre seu feedback</label>
+                <textarea rows="5" cols=50 name="feedback" id="feedback"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
         </fieldset>
     </form>
 </body>
