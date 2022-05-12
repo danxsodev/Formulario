@@ -19,31 +19,31 @@
         <br>
     </div>
 
-    <form>
+    <form action="mailto:edubarbos1@gmail.com" method="post" enctype="text/plain">
         <fieldset id="grupo">
             <div class="campo">
                 <label for="Nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="" required>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
             </div>
 
             <div class="campo">
                 <label for="Sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="" required>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
             </div>
 
             <div class="campo">
                 <label for="Data de Nascimento">Data de Nascimento:</label>
-                <input type="date" name="data" id="data" placeholder="" required>
+                <input type="date" name="data" id="data" placeholder="dd/mm/aaaa" required>
             </div>
 
             <div class="campo">
                 <label for="Gênero">Gênero:</label>
                 <br>
-                <input type="radio" name="gênero" id="gênero" value="Feminino"> Feminino
+                <input type="radio" name="genero" id="genero" value="Feminino"> Feminino
                 <br>
-                <input type="radio" name="gênero" id="gênero" value="Masculino"> Masculino
+                <input type="radio" name="genero" id="genero" value="Masculino"> Masculino
                 <br>
-                <input type="radio" name="gênero" id="gênero" value="Nao Binario"> Não Binário
+                <input type="radio" name="genero" id="genero" value="Nao Binario"> Não Binário
             </div>
 
             <div class="campo">
@@ -83,23 +83,23 @@
 
             <div class="campo">
                 <label for="Email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="" required>
+                <input type="email" name="email" id="email" placeholder="username@email.com" required>
             </div>
 
             <div class="campo">
                 <label for="Senha">Senha:</label>
-                <input type="password" name="senha" id="senha" placeholder="" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
             </div>
 
             <div class="campo">
                 <br>
-                <label>Registre seu feedback</label>
-                <textarea rows="5" cols=50 name="feedback" id="feedback" placeholder=""></textarea>
+                <label>Registre seu feedback:</label>
+                <textarea rows="5" cols=50 name="feedback" id="feedback" placeholder="Deixe seu feedback"></textarea>
             </div>
             
             <div class="buttons">
-                <button type="submit" class="button" id="enviar">Enviar</button>
-                <button type="reset" class="button" id="limpar">Limpar</button>
+                <input type="submit" class="button" id="enviar" value="Enviar"/>
+                <input type="reset" class="button" id="limpar" value="Limpar"/>
             </div>
         </fieldset>
     </form>
